@@ -1,0 +1,10 @@
+pages\ProductsPage.class
+setups\Capabilities.class
+pages\LoginPage.class
+helpers\TestRunner.class
+steps\ProductsStep.class
+steps\BackgroundStep.class
+steps\LoginStep.class
+setups\Hook.class
+helpers\GlobalVariables.class
+setups\BrowserSetup.class
