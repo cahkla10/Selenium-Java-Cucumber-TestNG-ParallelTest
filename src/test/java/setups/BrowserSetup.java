@@ -8,12 +8,9 @@ public class BrowserSetup {
         return ThreadLocalDriver.getThreadLocDriver();
     }
 
-    public static void setWebDriver() {
-        System.out.println("Browser: " + System.getProperty("browser"));
-        System.out.println("Thread Name: " + Thread.currentThread().getName());
-
+    public static void setWebDriver(String browser) {
         Capabilities capabilities = new Capabilities();
-        switch (System.getProperty("browser")){
+        switch (browser){
             case "chrome":
                 ThreadLocalDriver.setThreadLocDriver(capabilities.ChromeDriver());
                 break;

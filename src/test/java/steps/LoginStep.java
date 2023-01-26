@@ -4,7 +4,6 @@ import io.cucumber.java.en.*;
 import pages.LoginPage;
 import pages.ProductsPage;
 import setups.BrowserSetup;
-import setups.Hook;
 
 public class LoginStep {
     LoginPage loginPage = new LoginPage(BrowserSetup.getWebDriver());
