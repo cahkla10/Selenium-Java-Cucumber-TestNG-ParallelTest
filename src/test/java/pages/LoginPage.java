@@ -1,6 +1,6 @@
 package pages;
 
-import helpers.GlobalVariables;
+import utils.GlobalVariables;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;

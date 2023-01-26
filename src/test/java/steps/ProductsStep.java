@@ -3,9 +3,10 @@ package steps;
 import io.cucumber.java.en.*;
 import pages.ProductsPage;
 import setups.BrowserSetup;
+import utils.ThreadLocalDriver;
 
 public class ProductsStep {
-    ProductsPage productsPage = new ProductsPage(BrowserSetup.getWebDriver());
+    ProductsPage productsPage = new ProductsPage(ThreadLocalDriver.getThreadLocDriver());
 
     @When("^user click sort drop down$")
     public void user_click_sort_drop_down(){

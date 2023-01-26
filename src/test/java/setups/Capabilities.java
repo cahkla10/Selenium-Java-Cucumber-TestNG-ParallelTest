@@ -1,6 +1,6 @@
 package setups;
 
-import helpers.GlobalVariables;
+import utils.GlobalVariables;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

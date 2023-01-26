@@ -4,10 +4,11 @@ import io.cucumber.java.en.*;
 import pages.LoginPage;
 import pages.ProductsPage;
 import setups.BrowserSetup;
+import utils.ThreadLocalDriver;
 
 public class LoginStep {
-    LoginPage loginPage = new LoginPage(BrowserSetup.getWebDriver());
-    ProductsPage productsPage = new ProductsPage(BrowserSetup.getWebDriver());
+    LoginPage loginPage = new LoginPage(ThreadLocalDriver.getThreadLocDriver());
+    ProductsPage productsPage = new ProductsPage(ThreadLocalDriver.getThreadLocDriver());
 
     @Given("^user input username \"([^\"]*)\"$")
     public void userInputUsername(String username) {

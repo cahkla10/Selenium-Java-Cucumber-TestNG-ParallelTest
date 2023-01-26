@@ -1,12 +1,12 @@
 package setups;
 
-import helpers.ThreadLocalDriver;
+import utils.ThreadLocalDriver;
 import org.openqa.selenium.WebDriver;
 
 public class BrowserSetup {
-    public static WebDriver getWebDriver(){
-        return ThreadLocalDriver.getThreadLocDriver();
-    }
+//    public static WebDriver getWebDriver(){
+//        return ThreadLocalDriver.getThreadLocDriver();
+//    }
 
     public static void setWebDriver(String browser) {
         Capabilities capabilities = new Capabilities();
