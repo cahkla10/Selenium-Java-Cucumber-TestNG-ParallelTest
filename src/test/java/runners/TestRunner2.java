@@ -21,11 +21,13 @@ public class TestRunner2 extends AbstractTestNGCucumberTests {
     @Parameters("browserName")
     public void browser(@Optional("firefox") String browserName) {
         BrowserSetup.setWebDriver(browserName);
+        System.out.println("Before Test Thread ID: " + Thread.currentThread().getId());
     }
 
     @AfterTest
     public void after() {
         ThreadLocalDriver.getThreadLocDriver().quit();
+        System.out.println("After Test Thread ID: " + Thread.currentThread().getId());
         ThreadLocalDriver.webDriver.remove();
     }
 }
