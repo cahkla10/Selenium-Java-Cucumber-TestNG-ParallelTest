@@ -26,7 +26,6 @@ public class TestRunner2 extends AbstractTestNGCucumberTests {
     @AfterTest
     public void after() {
         ThreadLocalDriver.getThreadLocDriver().quit();
+        ThreadLocalDriver.webDriver.remove();
     }
-
-    //mvn clean test -DsuiteXmlFile=browserList.xml
 }
