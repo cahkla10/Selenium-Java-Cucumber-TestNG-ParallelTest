@@ -75,8 +75,8 @@ Open this automation using Intellij IDEA.
 ```
 |-- test
 		|-- java
-        |-- utils
-        |-- runners
+        			|-- utils
+        			|-- runners
 				|-- pages
 				|-- setups
 				|-- steps
